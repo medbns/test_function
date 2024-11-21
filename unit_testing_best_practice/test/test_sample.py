@@ -1,8 +1,9 @@
+# test/test_sample.py
 import sys
-# Always run from unit_testing_best_practice/test
-sys.path += ['../src'] 
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from sample import *
+from src.sample import func
 
 def test_answer():
     assert func(3) == 5
